@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto+Condensed&subset=cyrillic,cyrillic-ext');
+
+$body-color: #E0F2F1;
+$body-container-color: #80CBC4;
+$header-box-color: #009688;
+$form-box-color: #009688;
+$input-color: #4DB6AC;
+$input-hover-color: #439C93;
+$input-focus-color: #368078;
+$button-color: #00756A;
+$button-hover-color: #025C53;
+$link-color: #2C6862;
+$box-shadow-color: rgba(0, 0, 0, 0.2);
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background: $body-color;
+    margin: 0;
+    color: white;
+}
+
+.body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: $body-container-color;
+    margin: 3vh 3vw;
+    border-radius: 1em;
+    min-height: 90vh;
+}
+
+.header-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 $box-shadow-color;
+    transition: 0.3s ease;
+    border-radius: 5px;
+    margin: 16px;
+    min-width: 30%;
+    min-height: 10%;
+    padding: 0px 8px;
+    background-color: $header-box-color;
+}
+
+a {
+    text-decoration: none;
+    color: $link-color;
+    background-color: white;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+button {
+    color: white;
+}
+
+.form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 $box-shadow-color;
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 16px;
+    min-width: 30%;
+    min-height: 70%;
+    background-color: $form-box-color;
+    padding: 0px 8px;
+}
+
+form {
+    width: 100%;
+    padding: 8px;
+}
+
+input {
+    margin: 0;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background: $input-color;
+    outline: none;
+    height: 24px;
+    min-width: 30%;
+    font-size: 11px;
+    padding: 4px;
+    text-align: center;
+    font-size: 0.875em;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+input:hover {
+    background: $input-hover-color;
+}
+
+input:focus {
+    background: $input-focus-color;
+}
+
+input::placeholder {
+    color: white;
+}
+
+button {
+    background-color: $button-color;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 0.875em;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: $button-hover-color;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form>input {
+    margin: 0.3em;
+}
+
+form>button {
+    margin: 1em;
+}

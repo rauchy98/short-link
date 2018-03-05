@@ -1,0 +1,27 @@
+{
+  "name": "sl-backend",
+  "version": "1.0.0",
+  "description": "backend for short-link-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "cheerio": "^1.0.0-rc.2",
+    "connect-mongo": "^2.0.1",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "jsonwebtoken": "^8.1.1",
+    "mongoose": "^4.13.4",
+    "mongoose-auto-increment": "^5.0.1",
+    "url-metadata": "^2.1.7"
+  }
+}

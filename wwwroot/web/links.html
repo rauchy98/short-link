@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>URL Shorter Links</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link href="dist/css/linksStyle.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="body-container">
+        <div class="header-container">
+            <div class="header-box">
+                <div class="flex-center-div">
+                    <h1>URL Shortener</h1>
+                </div>
+            </div>
+
+            <form id="add-form">
+                <div class="header-box flex-center-div">
+                    <input type="text" class="create-url" id="input-url" name="input-url" placeholder="Paste URL and press 'Enter'" aria-describedby="basic-addon1">
+                </div>
+            </form>
+
+            <div class="header-box">
+                <div class="flex-center-div">
+                    <button id="logout">Logout</button>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="cards-container" id="cards-id">
+        </div>
+
+    </div>
+
+    <script src='./dist/js/linksScript.js'></script>
+
+</body>
+
+</html>
